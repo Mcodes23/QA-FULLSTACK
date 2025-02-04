@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: auto;
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-size: 18px;
+  font-family: Epilogue;
+  font-weight: 500;
+  color: hsl(0, 0%, 8%);
+  letter-spacing: 0.3px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+nav .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  right: 10%;
+}
+nav .right .logo {
+  color: hsl(0, 0%, 8%);
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-right: 40px;
+}
+.right .list_menu ul {
+  display: flex;
+  list-style: none;
+}
+.dropdown {
+  display: inline-flex;
+}
+.dropdown li img {
+  position: relative;
+  top: 2px;
+}
+.right .list_menu ul li {
+  margin-right: 30px;
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+}
+nav .left {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 8%;
+}
+.left .list_menu ul {
+  display: flex;
+  list-style: none;
+}
+.left .list_menu ul li {
+  margin-left: 40px;
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+}
+.list_menu ul li:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 8%);
+}
+/* .left .list_menu ul li:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 8%);
+} */
+nav .left button {
+  margin-left: 40px;
+  padding: 10px 20px;
+  color: hsl(0, 0%, 41%);
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 16px;
+  font-size: 0.9rem;
+}
+nav .left button:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(0, 0%, 35%);
+}
+main {
+  padding: 20px 0px;
+}
+main .main_container {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+.left_content {
+  height: 50vh;
+}
+.text {
+  width: 40vw;
+}
+.text h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.text p {
+  padding: 40px 0px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  margin-right: 30%;
+}
+.myBtn {
+  padding-top: 20px;
+}
+.myBtn button {
+  padding: 15px 30px;
+  background-color: hsl(0, 0%, 8%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  letter-spacing: 0.3px;
+}
+.myBtn button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 8%);
+}
+.images {
+  position: relative;
+  top: 120px;
+}
+.images img {
+  height: 24px;
+  margin-right: 20px;
+}
