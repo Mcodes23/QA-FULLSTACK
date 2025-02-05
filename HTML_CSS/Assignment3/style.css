@@ -66,10 +66,7 @@ nav .left {
   cursor: pointer;
   color: hsl(0, 0%, 8%);
 }
-/* .left .list_menu ul li:hover {
-  cursor: pointer;
-  color: hsl(0, 0%, 8%);
-} */
+
 nav .left button {
   margin-left: 40px;
   padding: 10px 20px;
