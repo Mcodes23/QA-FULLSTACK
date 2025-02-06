@@ -3,14 +3,17 @@
   margin: auto;
   padding: 0;
 }
+body {
+  font-family: Lato;
+  font-size: 14px;
+}
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   height: 90px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 }
 /* Right navbar */
 nav .right {
@@ -21,25 +24,34 @@ nav .right {
 
 nav .left {
   display: flex;
-  justify-content: flex-end; /* Push content to the right */
-  margin-right: 5%; /* Small space from the right edge */
+  justify-content: flex-end;
+  margin-right: 5%;
 }
 
 nav .right .list_menu ul {
   display: flex;
   position: relative;
   left: 80%;
-  gap: 60px;
+  gap: 50px;
 }
 nav > .right > .list_menu > ul,
 li {
   list-style-type: none;
+  color: #736f6f;
+  font-weight: 600;
+}
+nav > .right > .list_menu > ul,
+li:hover {
+  cursor: pointer;
+  color: #9ca5b7;
 }
 /* left navbar */
 
 nav > .left > .list_menu > ul {
   display: flex;
   gap: 50px;
+  color: #474747;
+  font-weight: 500;
 }
 nav > .left > .list_menu > ul > li > img .profile_img {
   border-radius: 50%;
@@ -48,17 +60,15 @@ nav > .left > .list_menu > ul > li > img .profile_img {
 /* main content */
 
 main {
-  width: 90vw;
-  height: 100vh;
+  width: 85vw;
   padding: 0;
   position: relative;
-  margin-top: 4px;
+  margin-top: 15px;
 }
 
 main .grid-container {
   display: flex;
-  gap: 40px;
-  height: inherit;
+  gap: 5px;
   width: 100%;
   margin: 0;
 }
@@ -66,25 +76,29 @@ main .grid-container {
 .right-container,
 .left-container {
   background-color: #f2fdff;
-  height: 42vw;
+  height: 80vh;
 }
 .right-container {
-  width: 60%;
+  width: 55%;
   padding: 30px 100px;
 }
 .right-container .right-content {
   width: 30vw;
 }
-.right-container .options {
+.right-content .options {
   display: inline-flex;
   gap: 15px;
   font-size: 16px;
   width: 100%;
 }
+.options h4 {
+  color: hsl(0, 4%, 67%);
+}
 .right-container .options .option-flex {
   display: flex;
   align-items: center;
   gap: 8px;
+  color: hsl(0, 0%, 41%);
 }
 .option-flex hr {
   width: 20px;
@@ -108,6 +122,7 @@ form label {
   display: block;
   font-weight: bold;
   padding-bottom: 10px;
+  color: #9ca5b7;
 }
 form .input-container {
   position: relative;
@@ -127,10 +142,11 @@ form .input-container {
 form input {
   display: block;
   width: 100%;
-  padding: 8px;
+  padding: 14px;
   margin-bottom: 15px;
   border: none;
   background-color: #e6eeff;
+  color: #474747;
   border-radius: 4px;
 }
 form .flex-end {
@@ -149,7 +165,7 @@ form .flex-end p {
 }
 
 form .flex-end .myBtn {
-  background-color: blue;
+  background-color: #007bff;
   color: white;
   padding: 8px 16px;
   border: none;
@@ -206,24 +222,37 @@ form .bottom {
   border: none;
 }
 
-.order p {
-  font-size: 14px;
+.order label {
+  display: block;
+  font-weight: bold;
+  color: #9ca5b7;
 }
 
-.order form {
-  display: flex;
-  gap: 20px;
+.order-form {
+  display: block;
+  gap: 0px;
 }
-.order form input {
+.order-flex {
+  display: flex;
+}
+.order-flex input {
   position: absolute;
   padding: 14px 0px;
-  width: 72%;
+  width: 76%;
 }
-.order button {
+.order-flex button {
   padding: 14px 24px;
   position: relative;
   left: 42%;
-  border: none;
+  background-color: white;
+  border: 2px solid rgb(73, 171, 203);
+  color: rgb(73, 171, 203);
+  border-radius: 8px;
+}
+.order-flex button:hover {
+  cursor: pointer;
+  background-color: #9ca5b7;
+  color: white;
 }
 
 /* Table Styling */

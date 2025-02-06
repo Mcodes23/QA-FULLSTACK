@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACCOUNT FORM</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -54,7 +60,7 @@
         <div class="right-container">
           <div class="right-content">
             <div class="options">
-              <h4>Account</h4>
+              <h4 style="color: rgb(73, 171, 203)">Account</h4>
               <div class="option-flex">
                 <hr />
                 <img src="./images/checked.png" alt="" />
@@ -113,10 +119,12 @@
               </div>
             </div>
             <div class="order">
-              <p>Gift Card / Discount code</p>
-              <form action="">
-                <input type="text" />
-                <button type="submit">Apply</button>
+              <form class="order-form">
+                <label for="order">Gift Card / Discount code</label> <br />
+                <div class="order-flex">
+                  <input type="text" id="order" />
+                  <button type="submit">Apply</button>
+                </div>
               </form>
             </div>
             <table>
@@ -131,7 +139,16 @@
                 </tr>
                 <tr>
                   <td>Shipping</td>
-                  <td style="position: relative; left: 36%">Free</td>
+                  <td
+                    style="
+                      position: relative;
+                      left: 36%;
+                      color: #5ad176;
+                      font-weight: 700;
+                    "
+                  >
+                    Free
+                  </td>
                 </tr>
                 <tr>
                   <td><strong>Total</strong></td>
