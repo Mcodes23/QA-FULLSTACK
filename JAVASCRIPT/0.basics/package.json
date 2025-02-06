@@ -1,0 +1,15 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "basics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node basics.js",
+    "dev:": "nodemon basics.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
