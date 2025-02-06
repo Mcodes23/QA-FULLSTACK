@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACCOUNT FORM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="right">
+          <div class="logo">
+            <img src="./images/logo.PNG" alt="" />
+          </div>
+          <div class="list_menu">
+            <ul>
+              <li>Home</li>
+              <li>Shop</li>
+              <li>Contact</li>
+              <li>Help</li>
+            </ul>
+          </div>
+        </div>
+        <div class="left">
+          <div class="list_menu">
+            <ul>
+              <li style="display: flex; gap: 10px">
+                Account
+                <img src="./images/down-arrow.png" alt="" height="12px" />
+              </li>
+              <li style="display: flex; gap: 10px">
+                <img src="./images/shopping-bag.png" alt="" height="16px" />
+                3 Items
+              </li>
+              <li>
+                <img
+                  src="./images/profile_img.jpg"
+                  alt=""
+                  height="40px"
+                  width="40px"
+                  class="profile_img"
+                  style="border-radius: 50%"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="grid-container">
+        <!-- right div -->
+        <div class="right-container">
+          <div class="right-content">
+            <div class="options">
+              <h4>Account</h4>
+              <div class="option-flex">
+                <hr />
+                <img src="./images/checked.png" alt="" />
+                <hr />
+              </div>
+              <h4>Shipping</h4>
+              <div class="option-flex">
+                <hr />
+                <img src="./images/checked.png" alt="" />
+                <hr />
+              </div>
+              <h4>Payment</h4>
+            </div>
+            <form action="">
+              <h2>Account details</h2>
+              <label for="email">Email address</label>
+              <div class="input-container">
+                <img src="./images/checked.png" alt="" />
+                <input type="email" placeholder="Email@myemail.com" />
+              </div>
+              <label for="password">password</label>
+              <div class="input-container">
+                <img src="./images/checked.png" alt="" />
+                <input type="password" placeholder="********" />
+              </div>
+              <div class="flex-end">
+                <p>Register for account</p>
+                <button class="myBtn">Login</button>
+              </div>
+              <hr />
+              <div class="flex-end bottom">
+                <p>Cancel order</p>
+                <button class="myBtn">Shipping details</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- left div -->
+        <div class="left-container">
+          <div class="left-content">
+            <div class="heading">
+              <h1>Order Summary</h1>
+            </div>
+            <div class="myImage">
+              <img src="./images/headphones.PNG" alt="" width="100%" />
+            </div>
+            <div class="d-flex">
+              <div class="d-block">
+                <h4>Sony wireless headphones</h4>
+                <p>£320.45</p>
+              </div>
+              <div class="flex-btn">
+                <button>-</button>
+                <p>1</p>
+                <button>+</button>
+              </div>
+            </div>
+            <div class="order">
+              <p>Gift Card / Discount code</p>
+              <form action="">
+                <input type="text" />
+                <button type="submit">Apply</button>
+              </form>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Subtotal</td>
+                  <td style="position: relative; left: 36%">$316.55</td>
+                </tr>
+                <tr>
+                  <td>Tax</td>
+                  <td style="position: relative; left: 36%">$3.45</td>
+                </tr>
+                <tr>
+                  <td>Shipping</td>
+                  <td style="position: relative; left: 36%">Free</td>
+                </tr>
+                <tr>
+                  <td><strong>Total</strong></td>
+                  <td style="position: relative; left: 36%">
+                    <strong>$320.45</strong>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
