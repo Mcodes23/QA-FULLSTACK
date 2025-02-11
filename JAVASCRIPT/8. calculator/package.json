@@ -1,15 +1,15 @@
 {
-  "name": "javascript",
+  "name": "8. calculator.js",
   "version": "1.0.0",
-  "main": "basics.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node basics.js",
-    "dev": "nodemon basics.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "type": "module"
 }
