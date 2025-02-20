@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Library</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Book Library</h1>
+      <p>Discover and explore your favorite books</p>
+    </header>
+
+    <nav>
+      <div class="nav-container">
+        <div class="sort-options">
+          <button class="sort-btn" id="sort-genre">Sort by Genre</button>
+          <button class="sort-btn" id="sort-year">Sort by Year</button>
+          <button class="sort-btn" id="sort-pages">Sort by Pages</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="search-container">
+      <div class="search-bar">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for a book by title..."
+        />
+        <button id="search-btn">Search</button>
+      </div>
+    </section>
+
+    <section class="instructions">
+      <h3>How to Use:</h3>
+      <p>
+        - Click on the sort buttons to organize books by genre, year, or number
+        of pages
+      </p>
+      <p>- Use the search bar to find books by title (case insensitive)</p>
+      <!-- <p>- Click on any book card to see more details</p> -->
+    </section>
+
+    <main class="books-container">
+      <div id="loading-message" class="loading">Loading books...</div>
+      <div id="error-message" class="error-message" style="display: none">
+        Error loading books. Please try again later.
+      </div>
+      <div id="books-grid" class="books-grid"></div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

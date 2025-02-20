@@ -8,7 +8,7 @@ Array.from(buttons).forEach((btn) => {
         const result = eval(display.value);
         display.value += `\n ${result}`;
       } catch (error) {
-        display.value += `\n Error`;
+        display.value = `\n Error`;
       }
     } else if (btn.classList.contains("clear")) {
       display.value = "";
