@@ -1,17 +1,18 @@
-type rectangleType = {
-  width: number;
-  height: number;
-};
-const getRectangleArea = (rectangle: rectangleType) => {
-  return rectangle.width * rectangle.height;
+type Recipe = {
+  title: string;
+  instructions: string;
+  ingredients: object[]
 };
 
-const getRectanglePerimeter = (rectangle: rectangleType) => {
-  return 2 * (rectangle.width + rectangle.height);
+const processRecipe = (recipe: Recipe) => {
+  // Do something with the recipe in here
 };
-const rectangle = {
-    width: 5,
-    height: 10
-}
-console.log(getRectangleArea(rectangle))
-console.log(getRectanglePerimeter(rectangle))
+
+processRecipe({
+  title: "Chocolate Chip Cookies",
+  ingredients: [
+    { name: "Flour", quantity: "2 cups" },
+    { name: "Sugar", quantity: "1 cup" },
+  ],
+  instructions: "...",
+});

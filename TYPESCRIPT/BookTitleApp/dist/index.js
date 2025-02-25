@@ -11,7 +11,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 let allBooks = [];
 let counter = 0;
 const cart = [];
-// DOM Elements
 const booksGrid = document.getElementById("books-grid");
 const loadingMessage = document.getElementById("loading-message");
 const errorMessage = document.getElementById("error-message");
@@ -28,7 +27,6 @@ const list = document.querySelector(".listCard");
 const body = document.querySelector("body");
 const total = document.querySelector(".total");
 const quantity = document.querySelector(".quantity");
-// Fetch books
 function fetchBooks() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
@@ -52,7 +50,6 @@ function fetchBooks() {
         }
     });
 }
-// Display books
 function displayBooks(books) {
     booksGrid.innerHTML = "";
     if (books.length === 0) {
@@ -100,7 +97,6 @@ function searchBooks() {
         .includes(searchTerm));
     displayBooks(filteredBooks);
 }
-// Add to cart
 function addToCart(book) {
     const existingBook = cart.find((item) => item.id === book.id);
     if (existingBook) {
@@ -113,7 +109,6 @@ function addToCart(book) {
     cartCounter.textContent = counter.toString();
     updateCartUI();
 }
-// Update cart UI
 function updateCartUI() {
     list.innerHTML = "";
     let totalAmount = 0;
