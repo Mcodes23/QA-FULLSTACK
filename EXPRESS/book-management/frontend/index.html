@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Book Library</h1>
+      <p>Discover and explore your favorite books</p>
+    </header>
+    <nav>
+      <div class="nav-container">
+        <div class="sort-options">
+          <select id="filter-genre">
+            <option value="all">Filter By All Genres</option>
+            <option value="fiction">Fiction</option>
+            <option value="dystopian">Dystopian</option>
+            <option value="romance">Romance</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="adventure">Adventure</option>
+            <option value="historical fiction">Historical Fiction</option>
+            <option value="epic poetry">Epic Poetry</option>
+          </select>
+        </div>
+        <div class="shopping">
+          <img
+            src="./images/cart-shopping-solid.svg"
+            alt=""
+            height="30px"
+            id="shopping-cart"
+          />
+          <div class="items-ordered">
+            <span id="counter">0</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="search-container">
+        <div class="search-bar">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for a book by title..."
+          />
+          <button id="search-btn">Search</button>
+        </div>
+      </section>
+      <div id="books-list"></div>
+    </main>
+    <script src="./src/index.ts"></script>
+  </body>
+</html>
